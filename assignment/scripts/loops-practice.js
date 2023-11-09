@@ -14,17 +14,44 @@ for (let i=0; i<4; i++) {
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 0 to 5');
 
+for(let i=0; i < 6; i++){
+  console.log( ' count from 0 to 5: ', i);
+}
+
+// ANSWER: For this one, we had to change 'i<4' to 'i<6' because there are six numbers in our array.
+
 // 1.b. TODO: Write a for loop to console.log the numbers from 3 to 5
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 3 to 5');
 
+for(let i=3; i<6; i++){
+  console.log( 'count from 3 to 5: ', i);
+}
+
+// ANSWER: I changed 'i' to be equal to 3 since we are only look from 3 to 5. Since 'i<6' is already set, it is expected to go go until 5.
+
 // 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
 //   - Which part of the example loop do you need to change to do this?
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
+for (let i = 2; i < 11; i++){
+  //console.log(i);
+    if( i%2 == 0){
+      console.log( 'Number is even: ', i)
+    }
+}
+
+// ANSWER: I changed the 'i' to equal 2 because we are only counting even numbers from 2.
+// I also changed the condition to 'i<11' because we are only measuring until 10.
+// I added an if statment of 'if( i%2 == 0)" to target all the even numbers. % is the remaider symbol.
 
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
 
+let numbers= [0, 1, 2, 3, 4, 5];
+
+/*for(let i = numbers.length-1; i>=0; i--){
+  console.log();
+} /*
 
 // 2. For of loops  
 console.log('---- 2. For Of loop ----');
