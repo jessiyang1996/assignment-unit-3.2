@@ -75,7 +75,7 @@ console.log('Some stars using while:');
 let i = 0;
 
 while( i < stars.length){
-  console.log(stars[i]);
+  console.log('While Loop list stars: ', stars[i]);
   i++;
 }
 
@@ -83,9 +83,16 @@ while( i < stars.length){
 console.log('count from 0 to 5');
 i=0;
 while (i<6){
-  console.log(i)
+  console.log('While loop count from 0 - 5: ', i)
   i++;
 }
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+
+numbers= [0,1,2,3,4,5,6,7,8,9,10];
+number= 10; //we set number to 10 becuase we want to start at 10
+while(number>numbers[4]){ //we want numbers[4] because we want to stop at 5
+    console.log('While Loop Count Backwards from 10-5: ', numbers[number]);
+    number--; // we want to decrease from 10 by 1 so it lists in order from 10-5
+}
